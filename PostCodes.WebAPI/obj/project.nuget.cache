@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "L02Imj9l8I3RS/cmNtZbeAIfCmVd0dML3fvhjfAqEYs7JkA80JTVDoaV/fIsnAiB2Opd/7Cq5w3VyAsKzAr9Gw==",
+  "success": true,
+  "projectFilePath": "D:\\poc\\postCodes\\PostCodes.WebAPI\\PostCodes.WebAPI\\PostCodes.WebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shashank\\.nuget\\packages\\amazon.lambda.apigatewayevents\\2.4.1\\amazon.lambda.apigatewayevents.2.4.1.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\amazon.lambda.applicationloadbalancerevents\\2.1.0\\amazon.lambda.applicationloadbalancerevents.2.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\amazon.lambda.aspnetcoreserver\\7.2.0\\amazon.lambda.aspnetcoreserver.7.2.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\amazon.lambda.core\\2.1.0\\amazon.lambda.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\amazon.lambda.logging.aspnetcore\\3.1.0\\amazon.lambda.logging.aspnetcore.3.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.3.0\\amazon.lambda.serialization.systemtextjson.2.3.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\aws.logger.aspnetcore\\3.3.0\\aws.logger.aspnetcore.3.3.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\aws.logger.core\\3.1.0\\aws.logger.core.3.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\awssdk.cloudwatchlogs\\3.7.0.5\\awssdk.cloudwatchlogs.3.7.0.5.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\awssdk.core\\3.7.0.6\\awssdk.core.3.7.0.6.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\microsoft.extensions.configuration\\2.1.0\\microsoft.extensions.configuration.2.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.1.0\\microsoft.extensions.configuration.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\microsoft.extensions.configuration.binder\\2.1.0\\microsoft.extensions.configuration.binder.2.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.1.0\\microsoft.extensions.dependencyinjection.2.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\microsoft.extensions.logging\\2.1.0\\microsoft.extensions.logging.2.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.1.0\\microsoft.extensions.logging.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\microsoft.extensions.options\\2.1.0\\microsoft.extensions.options.2.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\microsoft.extensions.primitives\\2.1.0\\microsoft.extensions.primitives.2.1.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+    "C:\\Users\\shashank\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.23\\microsoft.netcore.app.host.win-x64.3.1.23.nupkg.sha512"
+  ],
+  "logs": []
+}
