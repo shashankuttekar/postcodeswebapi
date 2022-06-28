@@ -7,7 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostCodes.WebAPI", "PostCod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostCodes.Common", "PostCodes.Common\PostCodes.Common.csproj", "{D442286A-2245-4FD3-B11F-62375EED5F40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostCodesWebAPITest", "PostCodesWebAPITest\PostCodesWebAPITest.csproj", "{BCD5A9E0-4C20-4093-B615-9CD9CABE87D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostCodesWebAPITest", "PostCodesWebAPITest\PostCodesWebAPITest.csproj", "{BCD5A9E0-4C20-4093-B615-9CD9CABE87D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostCodes.Model", "PostCodes.Model\PostCodes.Model.csproj", "{317E79B1-FD1D-4D9B-B598-47B2B5830DE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostCodes.Service", "PostCodes.Service\PostCodes.Service.csproj", "{0D0FB1A8-66C8-494E-8CFB-3A96A78CC8C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostCodes.DataTransferModel", "PostCodes.DataTransferModel\PostCodes.DataTransferModel.csproj", "{07539EE0-E153-46E2-BE17-50268E9EC27C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{BCD5A9E0-4C20-4093-B615-9CD9CABE87D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCD5A9E0-4C20-4093-B615-9CD9CABE87D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCD5A9E0-4C20-4093-B615-9CD9CABE87D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317E79B1-FD1D-4D9B-B598-47B2B5830DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317E79B1-FD1D-4D9B-B598-47B2B5830DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317E79B1-FD1D-4D9B-B598-47B2B5830DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317E79B1-FD1D-4D9B-B598-47B2B5830DE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D0FB1A8-66C8-494E-8CFB-3A96A78CC8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D0FB1A8-66C8-494E-8CFB-3A96A78CC8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D0FB1A8-66C8-494E-8CFB-3A96A78CC8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D0FB1A8-66C8-494E-8CFB-3A96A78CC8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07539EE0-E153-46E2-BE17-50268E9EC27C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07539EE0-E153-46E2-BE17-50268E9EC27C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07539EE0-E153-46E2-BE17-50268E9EC27C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07539EE0-E153-46E2-BE17-50268E9EC27C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

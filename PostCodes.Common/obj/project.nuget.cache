@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fSLB6Wj+n+XoWgyM3M9nN2C/D6cjfiGT8LPmS61F8mdW+xGm0MQGg4XXwC1rmuc1pBVkji+UkyVgsdUTGSTpHw==",
+  "dgSpecHash": "iqp3kx9VD08y/2CpczSpv20Kp2PiGKA16cTbdWsz+12o8OucAZTgVTlSzz0rVxhuKBsUUaoLVrToYn5nNBqfiQ==",
   "success": true,
-  "projectFilePath": "D:\\poc\\postCodes\\PostCodes.WebAPI\\PostCodes.Common\\PostCodes.Common.csproj",
+  "projectFilePath": "D:\\poc\\postcodeswebapi\\PostCodes.Common\\PostCodes.Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

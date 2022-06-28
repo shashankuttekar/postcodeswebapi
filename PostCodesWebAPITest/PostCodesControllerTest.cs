@@ -3,9 +3,9 @@ using Moq;
 using PostCodes.WebAPI.Services.Interfaces;
 using PostCodes.WebAPI.Controllers;
 using Microsoft.Extensions.Logging;
-using PostCodes.WebAPI.Data.Model;
-using Microsoft.AspNetCore.Mvc;
 
+using Microsoft.AspNetCore.Mvc;
+using PostCodes.DataTransferModel;
 
 namespace PostCodesWebAPITest
 {
@@ -18,8 +18,8 @@ namespace PostCodesWebAPITest
         [Fact]
         public async void GetLookUp()
         {
-            PostCodesLookupResult result = new PostCodesLookupResult();
-            result.Result = new System.Collections.Generic.List<string>
+            PostCodesLookupDataTransferModel result = new PostCodesLookupDataTransferModel();
+            result.result = new System.Collections.Generic.List<string>
             {
                 "PA10 2AB",
                 "PA10 2AE",
@@ -28,7 +28,7 @@ namespace PostCodesWebAPITest
             postServiceMock.Setup(p => p.SearchPostCodesAsync("AL")).ReturnsAsync(result);
             PostCodesController postCodesController = new PostCodesController(postServiceMock.Object, logMock.Object);
             var actionResult = await postCodesController.SearchPostCodes("AL") as OkObjectResult;
-            var actualPostCodesResult = actionResult.Value as PostCodesLookupResult;
+            var actualPostCodesResult = actionResult.Value as PostCodesLookupDataTransferModel;
             Assert.Equal(actualPostCodesResult, result);
 
         }
@@ -37,25 +37,33 @@ namespace PostCodesWebAPITest
         [Fact]
         public async void GetPostCodeDetails()
         {
-            PostCodeResult result = new PostCodeResult
+            PostCodesDetailsDataTransferModel result = new PostCodesDetailsDataTransferModel
             {
-                PostCodeDetails = new PostCodeDetails
-                {
-                    Latitude = 51.792326d,
-                    Country = "England",
-                    Region = "East of England",
-                    Codes = new Code
-                    {
-                        AdminDistrict = "E07000067",
-                        ParliamentaryConstituency = "E14001045"
-                    }
-                }
+                area = "Midlands",
+                country = "England",
+                region = "East of England",
+                admin_district = "E07000067",
+                parliamentary_constituency = "E14001045"
+                
             };
             postServiceMock.Setup(p => p.GetPostCodeDetailAsync("CM8 1EF")).ReturnsAsync(result);
             PostCodesController postCodesController = new PostCodesController(postServiceMock.Object, logMock.Object);
             var actionResult = await postCodesController.GetPostCodes("CM8 1EF") as OkObjectResult;
-            var actualPostCodesResult = actionResult.Value as PostCodeDetails;
-            Assert.Equal(actualPostCodesResult, result.PostCodeDetails);
+            var actualPostCodesResult = actionResult.Value as PostCodesDetailsDataTransferModel;
+            Assert.Equal(actualPostCodesResult, result);
+
+        }
+
+        [Fact]
+        public async void PostCodeDetailsBadRequest()
+        {
+            
+            //postServiceMock.Setup(p => p.GetPostCodeDetailAsync(""));
+            PostCodesController postCodesController = new PostCodesController(postServiceMock.Object, logMock.Object);
+            var response = await postCodesController.GetPostCodes("") as BadRequestObjectResult;
+
+            Assert.Equal(400, response.StatusCode);
+            
 
         }
     }

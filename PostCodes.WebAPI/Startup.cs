@@ -1,4 +1,5 @@
 using System;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -9,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using PostCodes.Common.Model;
 using PostCodes.Common.Services;
 using PostCodes.Common.Services.Interfaces;
+using PostCodes.WebAPI.AutoMapperProfiles;
 using PostCodes.WebAPI.Middleware;
 using PostCodes.WebAPI.Services;
 using PostCodes.WebAPI.Services.Interfaces;
@@ -44,6 +46,15 @@ namespace PostCodes.WebAPI
                 config.SetMinimumLevel(LogLevel.Debug);
             });
             services.AddControllers();
+
+            var mapperConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new AutoMapperProfile());
+            });
+
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
             var config = new PostCodesEnvironmentConfig(Configuration.GetSection("PostalCode").Get<PostCodeURIBase>());
 
             services.AddSingleton<IPostCodesEnvironmentConfig>(_ => config);

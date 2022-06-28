@@ -12,6 +12,6 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PostCodes.Common\PostCodes.Common.csproj" />
+    <ProjectReference Include="..\PostCodes.Service\PostCodes.Service.csproj" />
   </ItemGroup>
 </Project>

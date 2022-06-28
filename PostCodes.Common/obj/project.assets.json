@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\poc\\postCodes\\PostCodes.WebAPI\\PostCodes.Common\\PostCodes.Common.csproj",
+      "projectUniqueName": "D:\\poc\\postcodeswebapi\\PostCodes.Common\\PostCodes.Common.csproj",
       "projectName": "PostCodes.Common",
-      "projectPath": "D:\\poc\\postCodes\\PostCodes.WebAPI\\PostCodes.Common\\PostCodes.Common.csproj",
+      "projectPath": "D:\\poc\\postcodeswebapi\\PostCodes.Common\\PostCodes.Common.csproj",
       "packagesPath": "C:\\Users\\shashank\\.nuget\\packages\\",
-      "outputPath": "D:\\poc\\postCodes\\PostCodes.WebAPI\\PostCodes.Common\\obj\\",
+      "outputPath": "D:\\poc\\postcodeswebapi\\PostCodes.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\shashank\\AppData\\Roaming\\NuGet\\NuGet.Config",

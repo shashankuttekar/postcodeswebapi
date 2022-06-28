@@ -38,9 +38,13 @@ namespace PostCodes.WebAPI.Controllers
         [HttpGet("{postCode}")]
         public async Task<IActionResult> GetPostCodes(string postCode)
         {
+            if (string.IsNullOrWhiteSpace(postCode))
+            {
+                return BadRequest("Please provide post code");
+            }
             _logger.LogInformation("PostCodes get detail called for post code: {0}", postCode);
             var data = await _postCodesService.GetPostCodeDetailAsync(postCode);
-            return Ok(data.PostCodeDetails);
+            return Ok(data);
         }
     }
 }
