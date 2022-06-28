@@ -1,0 +1,14 @@
+[
+	{
+		"ParameterKey":"ReactArtifactBucketName",
+		"ParameterValue":"postcodes-frontend-artifcats"
+	},
+	{
+		"ParameterKey":"CoreArtifactBucketName",
+		"ParameterValue":"postcodes-webapi-services"
+	},
+	{
+		"ParameterKey":"PostCodesWebAPIZipFileName",
+		"ParameterValue":"PostCodes.WebAPI.Artifact.zip"
+	}
+]
